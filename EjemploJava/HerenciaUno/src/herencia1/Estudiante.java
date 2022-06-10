@@ -1,5 +1,5 @@
 
-package herenciauno;
+package herencia1;
 
 public class Estudiante {
     // 1.  Declarar
@@ -55,5 +55,14 @@ public class Estudiante {
     public int obtenerEdadEstudiante(){
         return edadEstudiante;
     }
-
+    
+    @Override
+    public String toString() {
+        String cadena = String.format("NOMBRES: %s\n"
+                + "APELLIDOS: %s\n"
+                + "IDENTIFICACIÓN: %s\n"
+                + "EDAD: %d\n", nombresEstudiante, apellidosEstudiante, identificacionEstudiante, edadEstudiante);
+        
+        return cadena;
+    }
 }
